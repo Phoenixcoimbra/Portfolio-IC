@@ -18,21 +18,27 @@ body {
 
 .flex-container-one {
   display: flex;
-  size: 1fr;
+
   background-color: var(--secondary);
   flex-direction: row;
 }
 .flex-container-two {
   display: flex;
-  margin: 50%;
+
   background-color: var(--secondary);
   flex-direction: row;
 }
 .flex-container-three {
   display: flex;
-  margin: 50%;
+
   background-color: var(--secondary);
   flex-direction: row;
+}
+
+@media screen (max-width: 800px {
+.flex-container-one, .flex-container-three, .flex-container-two {
+  flex: 100;
+  }
 }
 h1,
 h2,
