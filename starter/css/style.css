@@ -1,6 +1,13 @@
 * {
   box-sizing: border-box;
 }
+/* colour palette*/
+:root{
+  --primary:rgb(55, 166, 240);
+  --secondary:rgb(1, 38, 41);
+  --tertiary:rgb(187, 125, 66);
+  --quaternary:rgba(253, 83, 4, 0.932);
+}
 
 body {
   margin: 0;
