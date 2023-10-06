@@ -16,6 +16,22 @@ body {
   line-height: 1.5;
 }
 
+.flex-container-one {
+  display: flex;
+  margin: 20px;
+  background-color: var(--secondary);
+  flex-direction: row;
+}
+.flex-container-two {
+  display: flex;
+  background-color: var(--secondary);
+  flex-direction: row;
+}
+.flex-container-three {
+  display: flex;
+  background-color: var(--secondary);
+  flex-direction: row;
+}
 h1,
 h2,
 h3,
