@@ -15,16 +15,6 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
 }
-/*.flex-container-three {
-  width: 25%;
-  float: left;
-}
-.page-section {
-  width: 75%;
-  float: left;
-}*/
-
-
 
 #flex-container-one {
   display: flex;
@@ -32,9 +22,10 @@ body {
   margin-left: 250px;
   background-color: var(--secondary);
   flex-direction: row;
-  height: 500px;
-  width: 300px;
+  height: 300px;
+  width: 200px;
   object-fit:cover;
+  
 }
  #flex-container-two {
   display: flex;
@@ -42,26 +33,47 @@ body {
   margin-left: 250px;
   background-color: var(--secondary);
   flex-direction: row;
-  height: 500px;
-  width: 300px;
+  height: 300px;
+  width: 200px;
   object-fit:cover;
+ 
   
 } 
 #flex-container-three {
-  display: flex;
-  float: left;
+  display:inline-flex;
+  /* float: left; */
   margin-left: 250px;
   background-color: var(--secondary);
   flex-direction: row;
-  height: 500px;
-  width: 300px;
-  object-fit:cover;
+  height: 300px;
+  width: 200px;
+  object-fit:cover; 
+  
 }
+#flex-container-four {
+  display: flex;
+  margin-left: 250px;
+  /* background-color: var(--secondary); */
+  flex-direction: row;
+  height: 300px;
+  width: 75%;
 
-
+ 
+}
+.flex-container-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.flex-container-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 /*layout changes the width the display*/
- @media screen and (max-width: 768px) {
-.flex-container-one, .flex-container-three, .flex-container-two {
+  @media screen and (max-width: 768px) {
+#flex-container-one, #flex-container-three, #flex-container-two #flex-container-four
+.flex-container-wrapper{
   flex: 100;
   flex-direction: column;
   }
