@@ -8,7 +8,22 @@
   --tertiary:rgb(187, 125, 66);
   --quaternary:rgba(253, 83, 4, 0.932);
 }
+.nav {
+  display: flex;
+ 
+  padding: 20px;
+}
 
+ .center {
+  height: 50px;
+  display: flex;
+  justify-content: right;
+
+}
+#hero {
+  background-color: solid var(--primary);
+  background-image: url(../images/02-hero-bg.jpg);
+}
 body {
   margin: 0;
   padding: 0;
@@ -19,41 +34,33 @@ body {
 #flex-container-one {
   display: flex;
   float: left;
-  margin-left: 250px;
   flex-direction: row;
   height: 300px;
-  width: 200px;
-  object-fit:cover;
+  width: 300px;
+  flex: 1;
 
 }
  #flex-container-two {
   display: flex;
   float: left;
-  margin-left: 250px;
   flex-direction: row;
   height: 300px;
-  width: 200px;
-  object-fit:cover;
- 
+  width: 300px;
   
 } 
 #flex-container-three {
-  display:inline-flex;
-  /* float: left; */
-  margin-left: 250px;
+  display:flex;
+  float: left;
   flex-direction: row;
   height: 300px;
-  width: 200px;
-  object-fit:cover; 
-  
+  width: 300px;
+  flex: auto;
 }
+
 #flex-container-four {
   display: flex;
-  margin-left: 250px;
   flex-direction: row;
-  height: 200px;
   flex: 1;
-
  
 }
 .flex-container-wrapper {
@@ -65,16 +72,37 @@ body {
   @media screen and (max-width: 768px) {
   #flex-container-one,
   #flex-container-three, 
-  #flex-container-two 
-  #flex-container-four
-    .flex-container-wrapper{
+  #flex-container-two, 
+  #flex-container-four,    
+  .flex-container-wrapper{
       flex: 100;
-        flex-direction: column;
+      flex-direction: column;
+      width: auto;
   }
 } 
 
-h1,
-h2,
+h1 {
+  position: sticky;
+  top: 0;
+  left: 0;
+  text-align: left;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  background: linear-gradient(to right, red, orange, blue);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
+}
+h2 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #ffa500;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
+}
 h3,
 h4,
 h5,
