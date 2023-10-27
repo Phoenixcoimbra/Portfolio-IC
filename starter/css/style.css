@@ -15,12 +15,14 @@
 }
 
  .center {
+  align-items: flex-start;
   height: 50px;
   display: flex;
   justify-content: right;
 
 }
 #hero {
+  align-items: flex-start;
   background-color: solid var(--primary);
   background-image: url(../images/02-hero-bg.jpg);
 }
@@ -103,8 +105,23 @@ h2 {
   color: #ffa500;
   text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
 }
-h3,
-h4,
+h3{
+   font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #ffa500;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
+}
+h4{
+   font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #ffa500;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
+   height: 50px;
+  display: flex;
+  justify-content:flex-end ;
+}
 h5,
 h6 
 {
@@ -112,5 +129,5 @@ h6
 }
 
 p {
-  margin: 0;
+  margin: 10px;
 }
